@@ -46,17 +46,17 @@ def reduce_to_all_true(source_array)
   true
 end
 
-# def reduce_to_any_true(source_array)
-#   for x in source_array 
-#   return true  if x == !false || x == !nil 
-#   end
-#   false
-# end
 def reduce_to_any_true(source_array)
-  for x in source_array
-  x == !false || x == !nil ? true : false
+  for x in source_array 
+  return true  if x == !false || x == !nil 
+  end
+  false
 end
-end
+# def reduce_to_any_true(source_array)
+#   for x in source_array
+#   x == !false || x == !nil ? true : false
+# end
+# end
 
   
   
